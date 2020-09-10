@@ -24,6 +24,7 @@ public class Frog : MonoBehaviour
         if (collision.tag == "Car")
         {
             Debug.Log("WE LOST!");
+            Score.currentScore = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
